@@ -15,9 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func convertAge(sender: AnyObject) {
+        //logs human age on console
         println(humanAge.text)
+        
+        //calculates cat age
         var x = humanAge.text.toInt()! * 7
-        resultLabel.text = String(x)
+        
+        //output cat age to display
+        resultLabel.text = "That cat is " + String(x) + " years old"
+        
     }
     
     
